@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>vault</RootNamespace>
+    <ApplicationIcon />
+    <Win32Resource />
+    <AssemblyName>vault</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Yuuki Wesp</Authors>
+    <Company>random_ru</Company>
+    <Description>A library for Vault service.</Description>
+    <Copyright>Yuuki Wesp (C) 2021</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/random-ru/vault-csharp</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/random-ru/vault-csharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>vault, kv-storage, api</PackageTags>
+    <PackageId>ivy.vault</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="3.2.0" />
+    <PackageReference Include="morelinq" Version="3.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="./icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
