@@ -16,7 +16,7 @@
                 throw new ArgumentNullException(nameof(space));
             if (_spaces.ContainsKey(space))
                 return _spaces[space];
-            return new VaultSpace(this, space);
+            return _spaces[space] = new VaultSpace(this, space);
         }
 
         public static IVault Create(string domain)

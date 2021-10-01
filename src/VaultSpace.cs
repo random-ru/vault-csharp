@@ -25,7 +25,7 @@
                 throw new ArgumentNullException(nameof(app));
             if (_apps.ContainsKey(app))
                 return _apps[app];
-            return new VaultApp(this, app);
+            return _apps[app] = new VaultApp(this, app);
         }
 
         public IVaultSpace WithToken(string spaceToken)
